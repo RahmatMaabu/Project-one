@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ephesis&family=Great+Vibes&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script&family=Ephesis&family=Great+Vibes&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>Peduli Palestina</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="logo">
+        <img src="assets/img/bendera.png" alt="" />
+        <h2>Peduli Palestina</h2>
+      </div>
+      <div class="menu-nav">
+        <i onclick="menuToggle()"><ion-icon name="close"></ion-icon></i>
+        <ul>
+          <li><a onclick="menuToggle()" href="#">Beranda</a></li>
+          <li><a onclick="menuToggle()" href="#about">About Us</a></li>
+          <li>
+            <a onclick="menuToggle()" href="#about-palestina"
+              >About Palestina</a
+            >
+          </li>
+          <li><a onclick="menuToggle()" href="#donate">Donation Report</a></li>
+          <li><a onclick="menuToggle()" href="#contact">Contact Us</a></li>
+          <li><a onclick="menuToggle()" href="#service">Service</a></li>
+        </ul>
+      </div>
+      <div onclick="menuToggle()" class="humberger-menu">
+        <i><ion-icon name="menu-sharp"></ion-icon></i>
+      </div>
+      <div class="back-button">
+        <i onclick="backButton()"
+          ><ion-icon name="arrow-forward-circle-outline"></ion-icon
+        ></i>
+      </div>
+    </nav>
+    <!-- batas navigation bar -->
+
+    <!-- Beranda section -->
+    <section onclick="removeMenu()" class="hero">
+      <main class="isi-section-one">
+        <div class="content">
+          <div class="word-palestina">
+            <h2>FREE PALESTINA !!!</h2>
+            <p>
+              "Kita bersatu untuk Palestina, panggilanmu didengar, mereka butuh
+              bantuan kita."
+            </p>
+            <button onclick="donateButton()">Donasi Sekarang</button>
+          </div>
+          <div class="img-hero">
+            <img src="assets/img/Save Gaza.jpeg" alt="" />
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- batas beranda section -->
+
+    <!-- Tentang Kami Section -->
+    <section onclick="removeMenu()" id="about" class="tentang-kami">
+      <main class="content-about">
+        <div class="judul-about">
+          <h2>ABOUT US</h2>
+          <div class="l">
+            <h1 class="more">LEARN MORE</h1>
+            <h1 class="us">ABOUT US</h1>
+          </div>
+          <p>
+            Tujuan kami membuka website untuk menyalurkan donasi di Palestina
+            untuk memberikan dukungan finansial yang sangat dibutuhkan kepada
+            saudara-saudara kita di Palestina, yang telah lama menderita akibat
+            konflik yang berkepanjangan. Dengan donasi anda, kami berharap dapat
+            membantu meningkatkan kualitas hidup mereka, menyediakan bantuan
+            kemanusiaan, dan memperjuangkan hak-hak mereka yang adil.
+          </p>
+          <p>
+            Rasulullah SAW bersabda: "Sedekah itu tidak akan mengurangi harta,
+            dan Allah akan meningkatkan kemuliaan orang yang memaafkan, serta
+            Allah mengasihi orang yang memberikan kebaikan." (HR. Al-Bukhari)
+          </p>
+          <p>
+            Dengan membuka pintu donasi untuk Palestina, kami berharap bisa
+            menciptakan kemuliaan dan mendapatkan rahmat dari Allah SWT,
+            sebagaimana yang diajarkan oleh Nabi Muhammad SAW dalam hadis
+            tersebut. Semoga Allah menerima amal kebaikan kita dan menjadikannya
+            sebagai sarana untuk membantu saudara-saudara kita di Palestina.
+          </p>
+        </div>
+      </main>
+    </section>
+    <!-- batas section tentang kami -->
+
+    <!-- section about palestina -->
+    <section id="about-palestina" class="news">
+      <main class="about-news">
+        <div class="judul-news">
+          <div class="e">
+            <h1 class="more">ABOUT OF PALESTINA</h1>
+          </div>
+          <div class="menu-news">
+            <div class="jenis-news none-0">
+              <p onclick="semuaNews()">Berita Palestina</p>
+              <i onclick="menuNews()"
+                ><ion-icon name="chevron-down-outline"></ion-icon
+              ></i>
+            </div>
+            <div class="jenis-news none-1">
+              <p onclick="history()">Sejarah Palestina</p>
+            </div>
+            <div class="jenis-news none-2">
+              <p onclick="aksi()">Aksi Bela Palestina</p>
+            </div>
+            <div class="jenis-news none-3">
+              <p onclick="galery()">Galery</p>
+            </div>
+            <div class="jenis-news none-4">
+              <p onclick="lainnya()">Lain-nya</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="slider-wrapper" id="sliderWrapper">
+            <!-- slide news of Palestina -->
+            <div onclick="news1()" class="slide" id="slides">
+              <img src="assets/news/news-1.jpg" alt="Slide 1" />
+              <p>ipol.id</p>
+              <h2>
+                3.785 Warga Palestina Tewas Dalam Serangan Israel Sejak 7
+                Oktober
+              </h2>
+            </div>
+            <div onclick="news2()" class="slide" id="slides">
+              <img src="assets/news/news-2.jpg" alt="Slide 2" />
+              <p>www.detik.com</p>
+              <h2>31 Masjid Hancur Total Digempur Israel Sejak 7 Oktober</h2>
+            </div>
+            <div onclick="news3" class="slide" id="slides">
+              <img src="assets/news/news-3.jpg" alt="Slide 3" />
+              <p>www.cnbcindonesia.com</p>
+              <h2>
+                Korban Tewas Akibat Perang Israel-Hamas Tembus 11.800 Jiwa
+              </h2>
+            </div>
+            <div onclick="news4()" class="slide" id="slides">
+              <img src="assets/news/news-4.jpg" alt="Slide 4" />
+              <p>www.cnnindonesia.com</p>
+              <h2>
+                FOTO: Israel Hujani Warga Sipil Lebanon Dengan Fosfor Putih
+                Terlarang
+              </h2>
+            </div>
+            <div onclick="news5()" class="slide" id="slides">
+              <img src="assets/news/news-5.jpeg" alt="Slide 5" />
+              <p>www.cnbcindonesia.com</p>
+              <h2>
+                Waduh, Menteri Israel Serukan 'Pembersihan' Warga dari Gaza
+              </h2>
+            </div>
+            <div onclick="news6()" class="slide">
+              <img src="assets/news/news-6.jpeg" alt="Slide 6" />
+              <p>www.cnbcindonesia.com</p>
+              <h2>Situasi Terkini Gaza, Israel Serbu Rumah Sakit Al-Shifa</h2>
+            </div>
+            <div class="slide">
+              <img src="assets/news/news-7.jpeg" alt="Slide 7" />
+              <p>www.cnbcindonesia.com</p>
+              <h2>
+                Gila! Israel Serbu RS Al-Shifa Gaza, Kepung UGD-Tank Tempur
+              </h2>
+            </div>
+            <div class="slide">
+              <img src="assets/news/news-8.png" alt="Slide 8" />
+              <p>menpan.go.id</p>
+              <h2>
+                Indonesia Kecam Tindak Kekerasan dan Serangan di Palestina
+              </h2>
+            </div>
+            <div class="slide">
+              <img src="assets/news/news-9.jpeg" alt="Slide 9" />
+              <p>www.cnbcindonesia.com</p>
+              <h2>
+                Update Terkini Gaza: Israel Kian Brutal, AS Plintat-plintut
+              </h2>
+            </div>
+            <div class="slide">
+              <img src="assets/news/news-10.jpg" alt="Slide 10" />
+              <p>m.lampost.co</p>
+              <h2>
+                Kabar Palestina Hari Ini: Israel Serang Rumah Sakit Terbesar di
+                Gaza
+              </h2>
+            </div>
+          </div>
+
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="history-news">
+          <div class="img-history">
+            <div class="history-img">
+              <img
+                class="history-img1"
+                src="assets/img/palestinaflag.jpg"
+                alt=""
+              />
+              <p class="title-1">Bendera Palestina</p>
+            </div>
+            <div class="history-imgbox">
+              <img
+                class="history-img2"
+                src="assets/img/Coat_of_arms_of_Palestine.jpg"
+                alt=""
+              />
+              <p class="title-2">Lambang Negara</p>
+            </div>
+          </div>
+          <div class="text-history">
+            <p style="font-weight: 600">
+              Masa Kolonial Inggris dan Imigrasi Yahudi Eropa ke Palestina
+            </p>
+            <p>
+              Setelah jatuhnya Kekhalifahan Utsmaniyah, Palestina menjadi
+              jajahan Inggris. Inggris menduduki selatan Palestina dan bagian
+              tengahnya pada Desember 1917. Pada 2 November 1917, Deklarasi
+              Balfour terjadi dengan menandatangani perjanjian penyerahan
+              Palestina kepada Zionis, padahal saat itu Palestina belum menjadi
+              jajahan Inggris. Saat perjanjian Balfour dilaksanakan, tercatat
+              sebesar 56.000 Yahudi menatap di Palestina, yang termasuk 8 persen
+              dari penduduk Palestina.
+            </p>
+            <p>
+              Pada September 1918, Inggris menjajah Palestina bagian utara. Pada
+              1939-1945, Eksodus Yahudi ke Palestina tidak bisa dilepaskan dari
+              tragedi Holokaus yang didengungkan Eropa. Holokaus muncul karena
+              perbuatan Nazi pada Perang Dunia II.
+            </p>
+            <p style="font-weight: 600">Konflik dengan Israel</p>
+            <p>
+              ada tahun 1946, Transyordania memperoleh kemerdekaan dari Mandat
+              Britania atas Palestina. Pada tanggal 14 Mei 1948, Yahudi
+              mendeklarasikan negara Israel. Pada tahun 1948, terjadi Perang
+              Arab-Israel. Selama perang, Israel memperoleh wilayah tambahan
+              karena menang perang. Mesir memperoleh kendali atas Jalur Gaza dan
+              Transyordania mendapatkan kontrol atas Tepi Barat. Pada tahun
+              1959, Mesir awalnya mendukung terciptanya Pemerintahan Seluruh
+              Palestina, namun dibubarkan. Pada tahun 1964, ketika Tepi Barat
+              dikontrol oleh Yordania, Organisasi Pembebasan Palestina didirikan
+              di sana dengan tujuan untuk menghadapi Israel. Pada tahun 1967,
+              Perang Enam Hari ketika Mesir, Yordania dan Suriah berperang
+              melawan orang Israel, berakhir dengan ekspansi teritorial
+              signifikan oleh Israel karena Israel menang atas Perang Enam Hari.
+              Pada 22 November 1974, KTT Liga Arab 1974 menunjuk Organisasi
+              Pembebasan Palestina (PLO) sebagai wakil sah tunggal rakyat
+              Palestina dan menegaskan kembali hak mereka untuk mendirikan
+              negara merdeka yang mendesak. PLO telah memiliki status pengamat
+              di Perserikatan Bangsa-Bangsa (PBB) sebagai "entitas non-negara"
+              Pada 15 November 1988, Deklarasi Kemerdekaan Palestina dinyatakan
+              di Aljir oleh Dewan Nasional (PNC) Organisasi Pembebasan Palestina
+              (PLO) Pada tahun 1993, dalam Perjanjian Oslo, Israel mengakui tim
+              negosiasi PLO sebagai "mewakili rakyat Palestina", dengan imbalan
+              PLO mengakui hak Israel untuk eksis dalam damai, penerimaan
+              resolusi Dewan Keamanan PBB 242 dan 338, dan penolakannya terhadap
+              "kekerasan dan terorisme".
+              <a
+                href="https://id.wikipedia.org/wiki/Palestina"
+                style="
+                  text-decoration: none;
+                  :hover {
+                    color: brown;
+                  }
+                "
+                >Baca Selengkapnya Klik Disini ..!</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- carousel   -->
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/aksisolidaritas/aksi-1.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/aksisolidaritas/aksi-2.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/aksisolidaritas/aksi-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/aksisolidaritas/aksi-4.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/aksisolidaritas/aksi-5.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/aksisolidaritas/aksi-6.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Batas carousel -->
+
+        <!-- galery -->
+        <div class="galery-donate">
+          <div class="img-galery">
+            <img class="img-1" src="assets/galery/galery-1.jpeg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-2" src="assets/galery/galery-2.jpeg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-3" src="assets/galery/galery-3.jpeg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-4" src="assets/galery/galery-4.jpg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-5" src="assets/galery/galery-5.jpeg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-6" src="assets/galery/galery-6.jpeg" alt="" />
+          </div>
+          <div class="img-galery">
+            <img class="img-7" src="assets/galery/galery-7.jpeg" alt="" />
+          </div>
+        </div>
+
+        <!-- content lainnya -->
+        <div class="lainnya">
+          <h2>Content Belum Tersedia</h2>
+        </div>
+      </main>
+    </section>
+
+    <!-- batas about-palestina -->
+
+    <!-- section donate -->
+    <div id="donate"></div>
+    <section id="donasi" class="donasi">
+      <main>
+        <div onclick="donateButton()" class="title-donasi">
+          <h2>DONASI SEKARANG</h2>
+          <h2>Tekan Untuk Berdonasi</h2>
+        </div>
+        <div class="title-donasi">
+          <h2>TOTAL DONASI</h2>
+          <h2 class="total-donasi">Rp. 0</h2>
+        </div>
+        <div class="title-donasi">
+          <h2>LAPORAN DONASI</h2>
+          <h2>Lihat Selengkapnya</h2>
+        </div>
+      </main>
+    </section>
+    <!-- batas section donasi -->
+
+    <!-- section input donasi -->
+    <section id="input-donasi" class="input-donasi-container">
+      <main class="input-donasi">
+        <div class="input-tittle">
+          <i><ion-icon name="create-outline"></ion-icon></i>
+          <h5>ENTER YOUR DONATION</h5>
+        </div>
+        <div class="box-input-container">
+          <div class="input-attention">
+            <h6>PERHATIAN</h6>
+            <p>
+              Pastikan lengkapi data anda agar tidak terjadi kesalahan dalam
+              pelaporan total donasi !
+            </p>
+          </div>
+          <div style="background: whitesmoke" class="box-input">
+            <p>Email</p>
+            <p>:</p>
+            <input placeholder="Masukkan Email" type="text" maxlength="100" />
+          </div>
+          <div class="box-input">
+            <p>Nama</p>
+            <p>:</p>
+            <input placeholder="Masukkan Nama" type="text" maxlength="100" />
+          </div>
+          <div style="background: whitesmoke" class="box-input">
+            <p>Alamat</p>
+            <p>:</p>
+            <input
+              placeholder="Masukkan Alamat (Optional)"
+              type="text"
+              maxlength="200"
+            />
+          </div>
+          <div class="box-input">
+            <p>No. Whatsapp</p>
+            <p>:</p>
+            <input
+              placeholder="Masukkan No Whatsapp"
+              type="number"
+              maxlength="13"
+            />
+          </div>
+          <div style="background: whitesmoke" class="box-input">
+            <p>Metode Donasi</p>
+            <p>:</p>
+            <i onclick="payMetode()"
+              ><ion-icon name="chevron-down-outline"></ion-icon
+            ></i>
+            <input
+              id="pembayaran"
+              placeholder="Pilih Metode Pembayaran"
+              type="text"
+            />
+            <div class="pay-metode">
+              <div class="pay-one">BRI</div>
+              <div class="pay-two">BNI</div>
+              <div class="pay-tree">Dana</div>
+              <div class="pay-four">Qris</div>
+              <div class="pay-five">Gopay</div>
+              <div class="pay-six">Mandiri</div>
+              <div class="pay-seven">LinkAja</div>
+              <div class="pay-eight">Shoppe Pay</div>
+            </div>
+          </div>
+          <div class="box-input">
+            <p>Masukkan Jumlah</p>
+            <p>:</p>
+            <input
+              id="input-jumlah-donasi"
+              placeholder="Minimal Rp.10.000"
+              type="text"
+              maxlength="1000"
+            />
+          </div>
+          <div
+            style="border-bottom: 1px solid #ccc; background: whitesmoke"
+            class="box-input"
+          >
+            <p>Masukkan</p>
+            <p>:</p>
+            <input placeholder="Berikan Masukkan Anda(Optional)" type="text" />
+          </div>
+          <button onclick="kirimDonasi()">Kirim</button>
+        </div>
+      </main>
+    </section>
+    <section class="code-pembayaran">
+      <main>
+        <div class="box-code">
+          <div class="isi-code">
+            <div class="rincian-donasi">
+              <h4>Rincian Donasi</h4>
+            </div>
+            <div class="tanggal">
+              <h4>Tanggal</h4>
+              <p>00/00/0000</p>
+            </div>
+            <div class="name-pay">
+              <h4>Metode Donasi</h4>
+              <p>Name payment</p>
+            </div>
+            <div class="status-donasi">
+              <h4>Status</h4>
+              <p>Pending</p>
+            </div>
+            <div class="kode-unik">
+              <h4>No Pembayaran</h4>
+              <p>0000000</p>
+            </div>
+            <div class="nama-pay">
+              <h4>Atas Nama</h4>
+              <p>Project 1</p>
+            </div>
+            <div class="jumlah-dikirimkan">
+              <h4>Jumlah Donasi</h4>
+              <p>100000</p>
+            </div>
+            <p class="pemberitahuan">
+              *Screenshot layar anda atau foto struk transaksi anda sebagai
+              bukti donasi
+            </p>
+            <p style="position: relative; top: -20px" class="pemberitahuan">
+              *Kirim sebelum jam 24:00 WITA
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- google maps location -->
+    <div id="maps" class="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6307337967673!2d123.05418627394697!3d0.5556017636160325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32792b3c66ddb87d%3A0xf08cba889379767!2sSTMIK%20Ichsan!5e0!3m2!1sid!2sid!4v1700226156683!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <section id="contact" class="sosmed">
+      <main>
+        <div class="sosmed-place">
+          <div class="address">
+            <h3>ADDRESS</h3>
+            <p>Jl. DRS. Achmad Nadjamuddin Kota Gorontalo</p>
+          </div>
+          <div class="address">
+            <h3>CONTACT US</h3>
+            <div class="box-contact">
+              <i><ion-icon name="call"></ion-icon></i>
+              <p>082296712007</p>
+            </div>
+          </div>
+          <div class="address">
+            <h3>FOLLOW US</h3>
+            <div class="box-sosmed">
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <p>Instagram</p>
+            </div>
+            <div class="box-sosmed">
+              <i><ion-icon name="logo-facebook"></ion-icon></i>
+              <p>Facebook</p>
+            </div>
+            <div class="box-sosmed">
+              <i><ion-icon name="logo-twitter"></ion-icon></i>
+              <p>Twitter</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer id="footer">
+      <div class="copr">
+        <p style="position: relative; top: 15px">
+          Mohammad Rahmat Maabu. Moh Aryo Daeng Matona. Wadi Toloingat. Mahmud
+          Nur Ali. Fazril Eke.
+        </p>
+        <p style="position: relative; bottom: 5px">
+          Copyright © 2023 Gorontalo Indonesia.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
