@@ -157,7 +157,7 @@ nav .menu-nav ul li a:hover::before {
   nav .menu-nav {
     background: whitesmoke;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     height: 400px;
     width: 100%;
